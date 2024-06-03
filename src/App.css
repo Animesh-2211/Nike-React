@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+  --red:#d01c28;
+  --gray:#2e2e2e;
+}
+*{
+  margin:0;
+}
+
+body{
+  font-family: "Poppins" , sans-serif;
+}
+
+button{
+    all:unset;
+    padding: 6px 16px;
+    background-color: var(--red);
+    height:32px;
+    color:white;
+    font-weight:500;
+}
+
+nav{
+  display:flex;
+  justify-content: space-between;
+  max-width:1280px ;
+  margin: 0 auto;
+  height:72px;
+  align-items: center;
+  margin-bottom: 25px;
+}
+nav ul{
+  display :flex;
+  list-style: none;
+  gap:24px;
+}
+
+
+.hero{
+  display:flex;
+  margin: 0  auto;
+  max-width:1280px;
+  align-items: center;
+  height:calc(100vh-110px);
+ 
+}
+
+.hero-content{
+    display:flex;
+    flex-direction: column;
+    gap:36px;
+}
+
+.hero h1{
+  font-weight:600;
+  line-height:102px;
+  font-size:108px;
+
+}
+.hero p{
+  font-weight:600;
+  color:var(--gray);
+  max-width: 400px;
+}
+
+.hero-button{
+  display:flex;
+  gap:40px;
+  font-size: 24px;
+
+}
+
+.secondary-button{
+  background: transparent;
+   color:var(--gray);
+   border: 1px solid gray;
+
+}
+
+
+ .Available p{
+   font-size:14px;
+   margin-bottom: 4px;
+ }
+
+ .comp-logo{
+  display:flex;
+  gap:16px;
+ }
+
+ @media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+  }
+
+  .hero-content {
+    align-items: center;
+  }
+
+  .hero h1 {
+    font-size: 3rem;
+    line-height: 1.1;
+  }
+
+  .hero p {
+    max-width: 100%;
+    font-size: 1rem;
+  }
+
+  .hero-button {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .comp-logo img {
+    width: 100px; /* Adjust as needed */
+  }
+}
+
+@media (max-width: 480px) {
+  nav {
+    flex-direction: column;
+    height: auto;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero p {
+    font-size: 0.9rem;
+  }
+
+  .hero-button button {
+    width: 100%;
+  }
+}
